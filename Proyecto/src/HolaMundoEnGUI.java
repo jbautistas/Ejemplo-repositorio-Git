@@ -6,6 +6,8 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import javax.swing.JTextPane;
+import javax.swing.DropMode;
 
 public class HolaMundoEnGUI {
 
@@ -46,10 +48,13 @@ public class HolaMundoEnGUI {
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Hola mundo");
-		lblNewLabel.setFont(new Font("Comic Sans MS", Font.PLAIN, 15));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(114, 102, 202, 29);
-		panel.add(lblNewLabel);
+		JTextPane txtpnBienvenidoAProes = new JTextPane();
+		txtpnBienvenidoAProes.setDropMode(DropMode.INSERT);
+		txtpnBienvenidoAProes.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		txtpnBienvenidoAProes.setText("                                  Bienvenido a PROES\r\n\r\nEste es un espacio para que los profesores puedan venderse y los estudiantes puedan encontrar al profesor que buscan");
+		txtpnBienvenidoAProes.setBounds(21, 76, 391, 89);
+		txtpnBienvenidoAProes.setOpaque(false);
+		txtpnBienvenidoAProes.setEditable(false);
+		panel.add(txtpnBienvenidoAProes);
 	}
 }
