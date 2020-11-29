@@ -9,7 +9,7 @@ import java.awt.Font;
 import javax.swing.JTextPane;
 import javax.swing.DropMode;
 
-public class HolaMundoEnGUI {
+public class Main {
 
 	private JFrame frame;
 
@@ -20,7 +20,7 @@ public class HolaMundoEnGUI {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					HolaMundoEnGUI window = new HolaMundoEnGUI();
+					Main window = new Main();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class HolaMundoEnGUI {
 	/**
 	 * Create the application.
 	 */
-	public HolaMundoEnGUI() {
+	public Main() {
 		initialize();
 	}
 
