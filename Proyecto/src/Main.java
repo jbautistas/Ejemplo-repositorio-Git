@@ -8,6 +8,8 @@ import javax.swing.SwingConstants;
 import java.awt.Font;
 import javax.swing.JTextPane;
 import javax.swing.DropMode;
+import java.awt.SystemColor;
+import java.awt.Color;
 
 public class Main {
 
@@ -45,6 +47,7 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
+		panel.setBackground(SystemColor.inactiveCaption);
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
